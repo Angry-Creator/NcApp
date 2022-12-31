@@ -1,0 +1,21 @@
+//For gradient background
+npm i expo-linear-gradient
+
+
+//link of the source
+https://docs.expo.dev/versions/latest/sdk/linear-gradient/
+
+
+//For navigation
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+npx expo install react-native-gesture-handler react-native-reanimated
+npm install @react-navigation/native-stack
+
+//For APIs
+npm install axios
+
+//API source site
+https://rapidapi.com/
+https://rapidapi.com/rapidapi/api/movie-database-alternative/
+
