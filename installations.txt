@@ -15,6 +15,15 @@ npm install @react-navigation/native-stack
 //For APIs
 npm install axios
 
+//For react native youtube iframe for trailer viewing
+npm install react-native-youtube-iframe
+
+//For Screen Orientation
+npx expo install expo-screen-orientation
+
+//For checking detecting orientation changes
+npm i react-native-community/hooks
+
 //API source site
 https://rapidapi.com/
 https://rapidapi.com/rapidapi/api/movie-database-alternative/

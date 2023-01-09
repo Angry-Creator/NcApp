@@ -16,8 +16,8 @@ export default function TopCard({ data, onPressAction }) {
                     {(data.title != undefined) &&
                         <Text style={styles.movieTitle} numberOfLines={1}>{data.title}</Text>
                     }
-                    {(data.additional_data.Genre != undefined) &&
-                        <Text style={styles.genreText} numberOfLines={1}>Genre: {data.additional_data.Genre}</Text>
+                    {(data.release_date != undefined) &&
+                        <Text style={styles.releaseDataText} numberOfLines={1}>Release Date: {data.release_date}</Text>
                     }
                 </View>
             </ImageBackground>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         borderBottomStartRadius: 20,
         borderBottomEndRadius: 20,
         width: "100%",
-        height: 280,
+        height: "100%",
     },
     topCard: {
         width: "100%",
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         fontWeight: "500",
         fontSize: 18,
     },
-    genreText: {
+    releaseDataText: {
         fontWeight: "300",
         fontSize: 16,
     }

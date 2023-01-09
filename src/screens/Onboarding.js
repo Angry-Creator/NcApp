@@ -1,16 +1,16 @@
-import { View, Text, StyleSheet, Image, Platform } from 'react-native';
+import { Text, StyleSheet, Image } from 'react-native';
 import GradientButton from '../components/GradientButton';
 import appColors from '../config/appColors';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Onboarding({ navigation }) {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Image style={styles.image} resizeMode="cover" source={require('../../assets/images/onboard_image.png')}/>
             <Text style={styles.title}>Onboarding</Text>
             <Text style={styles.subTitle}>Watch and Download Latest Movies For Free!</Text>
             <GradientButton text={"Enter Now"} onPress={() => navigation.navigate("MyTabs")}/>
-        </View>
+        </SafeAreaView>
     )
 }
 
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: appColors.primary,
         alignItems: "center",
-        paddingTop: Platform.OS === "android" ? 20 : 0,
     },
     image: {
         height: 490,

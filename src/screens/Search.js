@@ -1,11 +1,12 @@
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import appColors from "../config/appColors";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Search(){
     return(
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Text style={styles.testText}>Search Page</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 

@@ -1,11 +1,12 @@
-import { View, StyleSheet, Text } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import appColors from "../config/appColors";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Settings(){
     return(
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Text style={styles.testText}>Settings Page</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 
